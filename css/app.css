@@ -1,3 +1,7 @@
+body{
+    background-image: url('../image/yasou.jpg');
+    background-size: over;
+}
 h1{
     color: #ff3300;
 }
@@ -14,6 +18,6 @@ p{
     600- semibold 700-bold 800-extrabold 900-blac */
     background-color: #b5b8f1;
     width: 600px;
-    border-bottom: 1px solid red;
+   border-bottom: 1px solid red;
 
 }
