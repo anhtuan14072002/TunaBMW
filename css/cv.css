@@ -1,0 +1,26 @@
+.left{
+    width: 33.3%;
+    height: 100vh;
+    background-image: url('/image/op2.jpg');
+    background-size: over;
+}
+#nobita{
+    height: 250px;
+    border-radius: 50%;
+}
+.left h1{
+    text-align: center;
+}
+.left h2{
+    color: #7a0022;
+    text-align: center;
+}
+.right{
+    width: calc(25% - 60px);
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px gray;
+    border-radius: 6px;
+    transition: all 300ms;
+}
