@@ -15,7 +15,7 @@ div{
     
 }
 div:hover{
-    box-shadow: 0 0 5px rgb(245, 2, 2);
+    box-shadow: 0 0 5px #f50202;
     background-color: violet;
     transform: scale(1.5);
 }
@@ -27,9 +27,8 @@ div a{
     color: red;
     text-decoration: none;
 }
-#conga{
-    background-color: #2ef02e;
-}
+
+
 .conlon{
     background-color: #d9bd9a;
 }
