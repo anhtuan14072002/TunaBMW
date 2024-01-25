@@ -4,6 +4,9 @@
 body .box .grah{
 
 }
+.box > .grah{
+    /* lệnh con trực tiếp là nhận. còn không thì sẽ không nhận */
+}
 .box .grah{
     color: blue;
 }
