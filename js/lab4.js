@@ -1,8 +1,7 @@
 var tt = 0;
 var tg = 0;
-var sx = [];
 for(var i = 1; i <= 6;i++ ){
-    
+    var sx = [];
     var rd = Math.random()*100;
     rd = parseInt(rd);
     sx.push(rd);
