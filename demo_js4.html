@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input onkeydown="demo1(this)" onkeyup="demo2(this)" type="text" name="fullname" placeholder="enter.."> 
+    
+    <input onkeydown="demo1(this)" onkeyup="demo2(this)" type="text" name="name" placeholder="enter..">
+
+    <select id="slct" onchange="demo3()">
+        <option value="HN">HN</option>
+        <option value="SG">SG</option>
+        <option value="HP">HP</option>
+        <option value="BN">BN</option>
+    </select>
+    <script type="text/javascript">
+        
+    
+        var ct = document.getElementById("slct")
+        function demo1(e){
+            
+            console.log(e.name+":"+e.value);
+            // e.name+":"+e.value
+        }
+        function demo2(e){
+            
+            console.log(e.name+":"+e.value);
+        }
+        function demo3(){
+            alert(ct.value);
+        } -->
+
+        <input onkeyup="nhapso(this)" type="number" name="number" placeholder="INPUT NUMEBER">
+        <button type="button" onclick="vongquay()">run</button>
+        <div id="nhapso">nhập số</div>
+        <div id="vongquay">
+        </div>
+        <div id="thongbao">
+            con số may mắn là:
+            <span id="so">
+            </span>
+        </div>
+        
+        <style>
+
+            #vongquay{
+                position: fixed;
+                left: 100px;
+                top: 50px;
+                width: 350px;
+                height: 350px;
+                background-image: url(./image/sun.png);
+                background-size: cover;
+            }
+            #thongbao{
+                position: fixed;
+                bottom: 0px;
+                width: 100x;
+                height: 100px;
+                border: 1px solid black;
+            }
+            
+        </style>
+        
+        <script type="text/javascript">
+            var vaild = false;
+            function nhapso(e){
+                var v = e.value;
+                var msg = document.getElementById("nhapso");
+                if(v >= 0 && v<=99){
+                    msg.innerText = "Valid";
+                    ms.style.color = "green";
+                    vaild =true;
+                }else{
+                    msg.innerText = "invalid";
+                    ms.style.color = "green";
+                    vaild= false;
+                }
+            }
+            
+            var rd = Math.random()*100;
+            rd = parseInt(rd);
+            console.log(rd);
+            function vongquay(){
+                var f = document.getElementById("vongquay");
+                var dg = 0;
+                var quay = setInterval(function(){
+                dg+=4;
+                if(dg == 720){
+                    clearInterval(quay);
+                }
+                f.style.transform = `rotate(${dg}deg)`;
+                },10);
+                document.getElementById("so").innerText = rd;
+            }
+            
+        </script>
+    </script>
+</body> 
+</html>
