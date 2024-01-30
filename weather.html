@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <input id="cityinput" type="text" name="city" placeholder="city">
+            <button type="button" onclick="weather()">tìm</button>
+            <h1>Tên thành phố: <span id="city"></span> </h1>
+            <h2>Nhiệt độ: <span id="temp">20</span><sup>o</sup></h2>
+            <h2>Độ ẩm: <span id="humidity">70</span>%</h2>
+            <h2>Áp suất: <span id="pressure">1000</span></h2>
+        </div>
+    </section>
+    <section>
+    </section>
+    <script type="text/javascript">
+        function weather(){
+            var cityinput = document.getElementById("cityinput").value;
+            var url = `https://api.openweathermap.org/data/2.5/weather?q=${cityinput}&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`;
+        // step 1 - call api
+            fetch(url).then(json=>json.json())
+            .then(data=>{
+        //step 2 - using JSON(Render data to UI/UX)
+            document.getElementById("city").innerText = data.name;
+            document.getElementById("temp").innerText = data.main.temp;
+            document.getElementById("humidity").innerText = data.main.humidity;
+            document.getElementById("pressure").innerText = data.main.pressure;
+        })  
+        }
+    </script>
+
+</body>
+</html>
