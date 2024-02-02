@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/lab5.css"/>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <ul id="wea">
+                <li class="box">
+                    <div class="item">
+                        <h3></h3>
+                        <h2></h2>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+                        <p></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function loadWeather(){
+            var url = `https://api.openweathermap.org/data/2.5/forecast?q=Hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`
+                fetch(url)
+                .then(js=>js.json())
+                .then(data=>{
+                    var list = data.list;
+                    var list_html= ``;
+                    list.forEach(e => {
+                        var main_html = `
+                                <li class="box">
+                                    <div class="item">
+                                        <h3>${e.dt_txt}</h3>
+                                        <img src="https://openweathermap.org/img/wn/${e.weather[0].icon}.png" />
+                                        <h2>${e.main.temp}<sup>o</sup> </h2>
+                                        <p>${e.weather[0].main}</p>
+                                    </div>
+                                </li>
+                        `;
+                        list_html += main_html;
+                    });
+                    document.getElementById("wea").innerHTML = list_html;
+                })
+        }
+        loadWeather();
+    </script>
+</body>
+</html>
