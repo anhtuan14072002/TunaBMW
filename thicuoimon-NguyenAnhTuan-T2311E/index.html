@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>register</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Create Account</h2>
+        <p>Get started width your free account</p>
+        <div class="login_all">
+            <div class="login_twitter">
+                <button>
+                    <span class="material-symbols-outlined">
+                        raven
+                    </span>
+                    <a style="color: #fafafa;" href="#">Login via Twitter</a>
+                </button>
+            </div>
+            <div class="login_facebook">
+                <button>
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <a style="color: #fafafa;" href="#">Login via Facebook</a>
+                </button>
+            </div>
+        </div>
+        <form>
+            <div class="fname">
+                <span class="material-symbols-outlined">
+                    group
+                </span>
+                <input class="inputfullname" type="text" name="fullname" placeholder="Họ và tên" required>
+            </div>
+            <div class="email">
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                <input class="inputemail" type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="telephone">
+                <span class="material-symbols-outlined">
+                    call
+                </span>
+                <input class="inputtel" type="tel" name="phone" placeholder="Số điện thoại" required>
+            </div>
+            <select name="jobseclect">
+                <span class="material-symbols-outlined">
+                    apartment
+                </span>
+                <option value="student">student</option>
+                <option value="teacher">teacher</option>
+                <option value="docter">docter</option>
+            </select>
+            <input type="password" name="password" placeholder="Creat password" required>
+            <input type="password" name="repeatpassword" placeholder="Repeat password" required>
+            <button type="submit">Creat account</button>
+        </form>
+        <p>Have an account?  <a href="#">Login</a></p>
+    </div>
+</body>
+</html>
