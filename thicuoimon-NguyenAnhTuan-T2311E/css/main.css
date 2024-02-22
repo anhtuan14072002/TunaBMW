@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.container .login_all a{
+    text-decoration: none;
+}
+.container .login_twitter{
+    margin: 5px 0;
+}
+.container .login_facebook{
+    margin: 5px 0;
+}
+.fname{
+    display: flex;
+    height: 40px;
+    padding: 5px 0;
+}
+.fname .inputfullname{
+    flex: 1;
+    
+}
+.email{
+    display: flex;
+    height: 40px;
+    padding: 5px 0;
+}
+.email .inputemail{
+    flex: 1;
+}
+.telephone{
+    display: flex;
+    height: 40px;
+    padding: 5px 0;
+}
+.telephone .innputtel{
+    flex: 1;
+}
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
