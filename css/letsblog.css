@@ -65,12 +65,78 @@ h3{
     width: 430px;
 }
 .postheaderright{
+    position: absolute;
+    right: 30px;
     width: 330px;
     float: right;
     margin-right: 50px;
 }
 .postaboutme{
     margin: 0 auto;
+    padding: 10px;
     width: 330px;
-
+    height: 370px;
+    border: 1px solid #f1e0e0;
+}
+.postaboutme img{
+    display: flex;
+    margin: 5px auto;
+}
+.subscribe{
+    margin-top: 40px;
+    padding-top: 20px;
+    width: 330px;
+    height: 175px ;
+    border: 1px solid#f1e0e0;
+    background-color: black;
+    text-align: center;
+}
+.subscribe input{
+    margin-top: 10px;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+}
+.subscribe button{
+    margin-top: 5px;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    background-color: #a08786 ;
+}
+.subscribe button:hover{
+    background-color: black;
+    outline: none;
+}
+.followme{
+    margin-top: 50px;
+    padding-top: 30px;
+    width: 330px;
+    height: 120px;
+    border: 1px solid #f1e0e0;
+    text-align: center;
+    align-items: center;
+}
+.iconflow{
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+.banner{
+    margin-top: 50px;
+}
+.categories{
+    margin-top: 50px;
+    padding-top: 30px;
+    width: 330px;
+    height: 370px;
+    border: 1px solid #f1e0e0;
+}
+.categories li{
+    list-style: none;
+    border-bottom: 1px solid #f1e0e0;
+    margin: 20px 0;
+    margin-left: 10px;
+}
+li:last-child{
+    border-bottom: none;
 }
