@@ -6,23 +6,95 @@
     margin: 15px 0;
 }
 .box .item{
-    box-shadow: 0 0 3px #695b5b;
+    box-shadow: 0 0 5px #d6d6d6;
     float: left;
     width: 100%;
     padding: 20px;
 }
+.box .item h2{
+    height: 60px;
+}
 .box .item img{
     aspect-ratio: 16 / 9;
 }
-#paginator {
-    width: 100%;
+#paginator{
     float: left;
+    width: 100%;
 }
-
 #paginator li{
     list-style: none;
     float: left;
     margin-right: 15px;
     border: 1px solid black;
     padding: 10px;
+}
+/* menu */
+.menu{
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+}
+.box-menu li {
+     float: left;
+     list-style: none;
+     margin-right: 15px;
+}
+.mobile-show{
+    display: none;
+}
+.menu-mobile i{
+    font-size: 25px;
+}
+.menu-mobile{
+    float: left;
+    margin-top: 10px;
+}
+.menu-logo{
+    float: left;
+    margin-left: 20px;
+}
+/* Media query */
+@media screen and (max-width: 1200px){
+    .container{
+        width: 950px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container{
+        width: 750px;
+    }
+    .box{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .box{
+        width: 100%;
+    }
+    .mobile-show{
+        display: block;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .container{
+        position: relative;
+    }
+    .box-menu{
+        position: absolute;
+        top: 35px;
+        left: 10px;
+        background-color: #fff;
+        z-index: 10;
+    }
+    .box-menu li{
+        float: left;
+        width: 100%;
+        padding: 10px 15px;
+        border-bottom: 1px solid gray;
+    }
 }

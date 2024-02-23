@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafa;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.35;
+}
+.textdetail{
+    text-align: left;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.textde{
+    text-align: center;
+}
+.imghome img{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.postheaderleft{
+    width: 900px;
+    margin: auto 100px ;
+    float: left;
+}
+.postheader_title{
+    text-align: center;
+}
+.postheader_title img{
+    padding: 20px 0;
+}
+.manrun{
+    height: 600px;
+    width: 900px;
+}
+.infopost{
+    text-align: center;
+}
+.postdetailleft {
+    padding-right: 35px;
+    padding-top: 20px;
+    float: left;
+    max-width: 430px;
+}
+.postdetailleft .postleft img{
+    height: 320px;
+    width: 430px;
+}
+.postdetailright {
+    float: right;
+    padding-top: 20px;
+    max-width: 430px;
+}
+.postdetailright .postright img{
+    height: 320px;
+    width: 430px;
+}
+.postheaderright{
+    width: 330px;
+    float: right;
+    margin-right: 50px;
+}
+.postaboutme{
+    margin: 0 auto;
+    width: 330px;
+
+}
